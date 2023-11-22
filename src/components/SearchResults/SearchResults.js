@@ -7,11 +7,11 @@ const SearchResults = ({ data }) => {
     return (
         <div className="SearchResults">
             <h2>Results</h2>
-            {data.map((value, key) => {
+            {data.map((song, key) => {
                 return <div>
-                    <h3>{value.name}</h3>
+                    <h3>{song.name}</h3>
                     <p>
-                        {value.artist} | {value.album}
+                        {song.artist} | {song.album}
                     </p>
                 </div>
             })}

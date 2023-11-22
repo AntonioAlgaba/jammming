@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 
 import SearchBar from "../SearchBar/SearchBar"
@@ -9,14 +9,23 @@ import songData from "../../Data.json";
 
 
 const App = () => {
- 
+    const [searchResults, setSearchResults] = useState([]);
+
+    const handleSearch = (searchTerm) => {
+        const results = songData.filter(song =>
+            Object.values(song).some(value =>
+              value.toString().toLowerCase().includes(searchTerm.toLowerCase())
+            )
+          );
+          setSearchResults(results);
+    };
     return (
         <div>
             <h1>JAMMMing</h1>
             <div className="App">
-               <SearchBar />
+               <SearchBar onSearch={handleSearch}/>
                <div className="App-playlist">
-                 <SearchResults data={songData}/>
+                 <SearchResults data={searchResults}/>
                 {/* <Playlist />*/}
                </div>
             </div>
