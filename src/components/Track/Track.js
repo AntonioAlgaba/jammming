@@ -1,4 +1,4 @@
-/*import React from "react";
+import React from "react";
 
 const Track = (props) => {
     return (
@@ -6,11 +6,11 @@ const Track = (props) => {
             <div className="Track-information">
                <h3>{props.track.name}</h3>
                <p>
-                {props.track.artist} | {props.trackalbum}
+                {props.track.artist} | {props.track.album}
                </p>
             </div>
         </div>
     )
 }
 
-export default Track;*/
+export default Track;
