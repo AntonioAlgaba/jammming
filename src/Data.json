@@ -1,0 +1,32 @@
+[
+    {
+        "id": "1",
+        "name": "song 1",
+        "artist": "artist 1",
+        "album": "album 1"
+    },
+    {
+        "id": "2",
+        "name": "another song",
+        "artist": "artist 2",
+        "album": "album 2"
+    },
+    {
+        "id": "3",
+        "name": "this is song 3",
+        "artist": "artist 3",
+        "album": "album 3"
+    },
+    {
+        "id": "4",
+        "name": "song 4",
+        "artist": "artist 4",
+        "album": "album 4"
+    },
+    {
+        "id": "5",
+        "name": "this is song 5",
+        "artist": "artist 5",
+        "album": "album 5"
+    }
+]
